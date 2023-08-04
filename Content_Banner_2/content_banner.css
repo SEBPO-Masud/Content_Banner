@@ -1,0 +1,172 @@
+/** ---- Universal Style ---- **/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/** ---- Custom CSS ---- **/
+
+/* Content Banner Section */
+.citrusX__content-banner {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.citrusX__content_banner-container {
+  background-color: #5fc5bf;
+}
+
+.citrusX__banner_container-row {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.citrusX__banner_img-unit {
+  position: relative;
+}
+
+.citrusX__content_banner-img img {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.citrusX__img-content {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #e5f6f5;
+  color: #001952;
+  border-radius: 0 10px 0 0;
+  font-size: 14px;
+  line-height: 20px;
+  width: 269px;
+}
+
+.citrusX__img-content h4 {
+  margin: auto;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.citrusX__banner_content-unit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.citrusX__banner_content-unit h3 {
+  margin: 0;
+  font-size: 25px;
+  line-height: 32px;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  text-align: center;
+}
+
+.citrusX__banner_content-unit p {
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  padding: 0 18%;
+  text-align: center;
+}
+
+.citrusX__content-cta {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+/** ---- Responsive CSS Media Querry---- **/
+@media all and (max-width: 425px) {
+  /* Content Banner */
+  .citrusX__banner_container-row {
+    padding: 0;
+  }
+  .citrusX__banner_content-unit p {
+    margin-bottom: 20px;
+    padding: 0 8%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  /* Content Banner Section */
+  .citrusX__content_banner-container {
+    background-color: #fff;
+    height: 100%;
+  }
+
+  .citrusX__banner_container-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .citrusX__banner_content-unit {
+    width: 100%;
+    background-color: #5fc5bf;
+    min-height: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .citrusX__content_banner-img {
+    text-align: center;
+    width: 100%;
+  }
+
+  .citrusX__img-content {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .citrusX__banner_img-unit .citrusX__img-content {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .citrusX__img-content h4 {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* Content Banner Section */
+  .citrusX__banner_content-unit {
+    width: 90%;
+    background-color: #5fc5bf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .citrusX__content_banner-img {
+    text-align: center;
+    width: 100%;
+  }
+
+  .citrusX__banner_content-unit p {
+    margin-top: 10px;
+    margin-bottom: 22px;
+    padding: 0 20px;
+  }
+
+  .citrusX__img-content h4 {
+    margin-left: 0;
+  }
+}
