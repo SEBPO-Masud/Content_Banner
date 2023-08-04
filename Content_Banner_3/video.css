@@ -12,6 +12,7 @@ body {
 }
 
 .citrusX__video {
+  margin-top: 40px;
   background: #fef3f3;
   min-height: 370px;
 }
@@ -81,7 +82,12 @@ body {
 }
 
 @media all and (max-width: 768px) {
+
   /* video style */
+  /* .citrusX__video {
+    margin-top: 0;
+  } */
+
   .citrusX__videoRow {
     display: flex;
     flex-direction: column;
